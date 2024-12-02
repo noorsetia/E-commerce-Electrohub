@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2bd5d5;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Link Styles */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.nav a:hover {
+    background-color: #0078d7; /* Change background on hover */
+    color: #fff; /* Keep text white */
+    transform: scale(1.05); /* Slightly enlarge the link */
+}
+
+/* Grid Layout */
+.product-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.product-item {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Images */
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.product-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Link Styling */
+.product-item a {
+    display: block;
+    margin: 0.5rem 0;
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-item a:hover {
+    color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-row {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 items per row for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-row {
+        grid-template-columns: repeat(1, 1fr); /* Adjust to 1 item per row for small screens */
+    }
+}
+
+.lp {
+    width: 250px;
+    height: 200px;
+}
+.pk {
+    width: 500px;
+    height: 400px;
+}
+.you {
+    font-size: 50px;
+    
+}
+.ok {
+    font-size: 30px;
+
+}
+.we {
+    text-align: left;
+    font-size: 40px;
+}

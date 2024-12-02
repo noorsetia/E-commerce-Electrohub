@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ElectroHub</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html" class="active">Cart</a>
+        </nav>
+    </header>
+    <main class="cart-page">
+        <h1>Shopping Cart</h1>
+
+        <!-- Cart Items Section -->
+        <section class="cart-items">
+            <div class="cart-item">
+                <img src="apple.webp" alt="iPhone 16 Pro">
+                <div class="item-details">
+                    <h2>iPhone 16 Pro</h2>
+                    <p><strong>Color:</strong> Desert Titanium</p>
+                    <p><strong>Price:</strong> $1,099</p>
+                    <label for="quantity-iphone16">Quantity:</label>
+                    <input type="number" id="quantity-iphone16" value="1" min="1">
+                    <p><strong>Subtotal:</strong> $1,099</p>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="macbook.webp" alt="MacBook Pro">
+                <div class="item-details">
+                    <h2>MacBook Pro</h2>
+                    <p><strong>Processor:</strong> M2 Chip</p>
+                    <p><strong>Price:</strong> $2,499</p>
+                    <label for="quantity-macbook">Quantity:</label>
+                    <input type="number" id="quantity-macbook" value="1" min="1">
+                    <p><strong>Subtotal:</strong> $2,499</p>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Summary Section -->
+        <section class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p><strong>Subtotal:</strong> $3,598</p>
+            <p><strong>Shipping:</strong> Free</p>
+            <p><strong>Tax:</strong> $300</p>
+            <h3><strong>Total:</strong> $3,898</h3>
+            <div class="cart-actions">
+                <button class="update-cart">Update Cart</button>
+                <button class="checkout">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 ElectroHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
